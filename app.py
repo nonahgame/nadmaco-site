@@ -32,7 +32,7 @@ def pages():
 
 @app.route("/api")
 def pagejs():
-    return jsonify(JOBS)
+    return jsonify(render_template('page.html'), JOBS)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)

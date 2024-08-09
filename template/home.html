@@ -2,39 +2,7 @@
 <html>
     <head>
         <title>NADMACO</title>
-        <style>
-            h1 {
-                font: size: 45px;
-                font-family: roboto;
-                font-weight: normal;
-                color: rgb(0, 0, 225);
-                text-align: center;
-            }
-            #banner {
-                width: 350px;
-                 height: 120px;
-                object-fit: cover;
-            }
-            h2 {
-                font: size: 35px;
-                font-family: roboto;
-                font-weight: normal;
-                color: rgb(0, 0, 0);
-                text-align: center;
-            }
-            p {
-                font-family: roboto;
-                color: rgb(0, 0, 0);
-            }
-            #container0 {
-                margin: 0 auto;
-                text-align: center;
-            }
-            #container {
-                max-width: 720px;
-                margin: 0 auto;
-            }
-        </style>
+        {% include 'home2.html'%}
     </head>
 <body>
     <h1>Nadmaco.Ltd</h1>
@@ -43,18 +11,14 @@
     </div>
     <div id="container">
         <h2>Nadmaco Vission</h2>
-        <p>
-    Introducing the epitome of luxury and sophistication in the world of pharmaceutical manufacturing - the large stainless steel tank filled with pristine water. Crafted with the finest quality stainless steel, this tank exudes opulence and elegance, making it the perfect addition to any state-of-the-art drugs manufacturing facility. The sheer size of the tank is a testament to its grandeur, providing ample space for the water to be stored in its purest form, ready to be utilized in the production of high-quality drugs.
-    The stainless steel construction of the tank not only adds a touch of modernity to the manufacturing process but also ensures the water remains uncontaminated and untainted, meeting the stringent standards of pharmaceutical production. The reflective surface of the tank exudes a sense of luxury, while the sheer volume of water it can hold speaks volumes about its capability to cater to the demands of a high-end drugs manufacturing operation. The tank is a symbol of uncompromising quality and precision, embodying the ethos of excellence that defines the pharmaceutical industry.
-    In the world of Quality Drugs Manufacturing, this large stainless steel tank filled with water is a statement of luxury and sophistication. It represents the commitment to producing drugs of the highest caliber, where every detail is meticulously attended to. From its sleek stainless steel exterior to its voluminous capacity, this tank is a testament to the uncompromising standards upheld in the pharmaceutical industry. It is a symbol of excellence and a reflection of the dedication to quality that defines the manufacturing of life-saving drugs. 
-        </p>
+        {% include 'page.html'%}
         <h2>Open Position</h2>
         <p>
-            <div>
-               {%for job in jobs%}
-                  {% include 'home1.html'%}
-               {%endfor%}    
-            </div>
+        <div>
+            {%for job in jobs%}
+               {% include 'home1.html'%}
+            {%endfor%}    
+        </div>
         </p>
     </div>
     <div style="text-align: center;">
